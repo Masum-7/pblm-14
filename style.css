@@ -1,0 +1,385 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.full-website{
+    width: 1450px;
+    height: auto;
+    margin:auto;
+
+}
+
+
+/* MENU SECTION */
+
+.menu{
+    max-width: 100%;
+    text-align: center;
+}
+.menu ul{
+    padding: 10px;
+    
+}
+.menu ul li{
+    display:inline-block;
+    background-color: #48dbfb;
+    margin-left:5px;
+    padding: 10px;
+    transition: .5s;
+}
+.menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+     position:relative;
+    z-index: 1;
+    transition: .5s;
+}
+
+.menu ul li a::before{
+    content:'';
+    border-bottom:2px solid #000;
+    height: 100%;
+    width:0 ;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: .5s;
+    z-index: -1;
+    
+   
+}
+.menu ul li:hover{
+    background-color: #fff;
+    color: #48dbfb;
+
+}
+.menu ul li a:hover::before{
+    width: 100%;
+
+}
+
+/* .header-menu ul li a::before{
+    content:" ";
+    height: 100%;
+    width: 0;
+    border-bottom:2px solid black ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.header-menu ul li a:hover::before{
+    width: 100%;
+} */
+
+/* INTRO SECTION */
+.intro{
+    max-width: 100%;
+    height: auto;
+    background-color: #48dbfb;
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.intro p{
+
+}
+.intro h1{
+    padding:10px 0;
+}
+
+.intro .button{
+    background-color: #fff;
+    display: inline-block;
+     border-radius: 5px;
+    
+}
+.intro .button a{
+    display: inline-block;
+    color: #ddd;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.intro .button a::before{
+    content: '\f544';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+}
+
+.intro .button a::after{
+    content:'';
+    height: 100%;
+    width:0 ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: .5s;
+    z-index: -1;
+   
+    
+
+}
+
+.intro .button a:hover::after{
+    height: 100%;
+    width: 100%;
+    color: #000;
+    background-color:#000;
+}
+
+/* CONTAINER SECTION */
+.container{
+    max-width: 100%;
+    padding: 50px;
+}
+   /* Top-C */
+.container .topContainer h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.container .topContainer p{
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* <!-- IMG  C --> */
+
+.container .imgs{
+    text-align: center;
+    width: 1300px;
+    padding:50px 20px;
+    
+}
+
+.common{
+    margin: 10px;
+}
+/* img-1 */
+.container .imgs .img1{
+    width: 250px;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+.container .imgs .img1 img{
+   max-width: 100%;
+   transform: rotate(0) scale(1);
+   transition:.5s;
+  
+
+}
+.container .imgs .img1 img:hover{
+    transform: rotate(360deg) scale(1.3);
+}
+/* img-2 */
+.container .imgs .img2{
+    width: 250px;
+    height: auto;
+    /* background-color: orange; */
+    display: inline-block;
+    overflow: hidden;
+}
+.container .imgs .img2 img{
+    max-width: 100%;
+    transform: rotate(0) scale(1);
+    transition: .5s;
+}
+.container .imgs .img2 img:hover{
+    transform: rotate(25deg) scale(1.2);
+}
+/* img-3 */
+.container .imgs .img3{
+    width: 250px;
+    height: auto;
+    /* background-color: orange; */
+    display: inline-block;
+    overflow: hidden;
+}
+.container .imgs .img3 img{
+    max-width: 100%;
+    transform: rotate(0) scale(1);
+    transition: .5s;
+}
+.container .imgs .img3 img:hover{
+    transform: rotate(-25deg) scale(1.2);
+}
+/* img-4 */
+.container .imgs .img4{
+    width: 250px;
+    height: auto;
+    /* background-color: orange; */
+    display: inline-block;
+    overflow: hidden;
+
+}
+.container .imgs .img4 img{
+     max-width: 100%;
+    transform: rotate(0) scale(1);
+    transition: .5s;
+}
+.container .imgs .img4 img:hover{
+    transform: rotate(-25deg) scale(1.2);
+}
+/* img-5 */
+.container .imgs .img5{
+    width: 250px;
+    height: auto;
+    /* background-color: orange; */
+    display: inline-block;
+    overflow: hidden;
+}
+.container .imgs .img5 img{
+    max-width: 100%;
+    transform: rotate(0) scale(1);
+    transition: .5s;
+}
+.container .imgs .img5 img:hover{
+    transform: rotate(25deg) scale(1.2);
+}
+/* img-6 */
+.container .imgs .img6{
+    width: 250px;
+    height: auto;
+    /* background-color: orange; */
+    display: inline-block;
+    overflow:hidden ;
+
+}
+.container .imgs .img6 img{
+    max-width: 100%;
+    transform: rotate(0) scale(1);
+    transition:.5s;
+} 
+.container .imgs .img6 img:hover{
+    transform: rotate(360deg) scale(1.3);
+}
+/* img-7 */
+.container .imgs .img7{
+    width: 250px;
+    height: auto;
+    /* background-color: orange; */
+    display: inline-block;
+    overflow: hidden;
+}
+.container .imgs .img7 img{
+   width: 250px;
+   transform: rotate(0) scale(1);
+   transition: .5s;
+  
+}
+.container .imgs .img7 img:hover{
+    transform: rotate(10deg) scale(1.3);
+}
+/* img-8 */
+.container .imgs .img8{
+    width: 250px;
+    height: auto;
+    /* background-color: orange; */
+    display: inline-block;
+    overflow: hidden;
+}
+.container .imgs .img8 img{
+    width: 250px;
+    transform: rotate(0) scale(1);
+    transition: .5s;
+}
+.container .imgs .img8 img:hover{
+    transform: rotate(-10deg) scale(1.3);
+}
+
+
+
+
+/* Bottom-C */
+
+
+/* text site */
+.container .bottomContainer{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.container .bottomContainer h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    word-spacing: 5px;
+}
+.container .bottomContainer p{
+    line-height: 25px;
+    color:#8a8fa5;
+}
+
+/* step section */
+.container .stepPart .aki{
+    margin-top:25px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding:10px 15px;
+    color: #fff;
+    background-color: #000;
+}
+.container .stepPart{
+    text-align: center;
+    max-width: 100%;
+}
+.container .stepPart .step1{
+    display: inline-block;
+    transform:rotate(-40deg) scale(1);
+    transition: .5s;
+}
+.container .stepPart .step1:hover{
+    transform:rotate(0) scale(1.2);
+    background-color: #34a9d1;
+    color: #000;
+}
+
+.container .stepPart .step2{
+    display: inline-block;
+    transform: scale(1) ;
+    transition: .5s;
+}
+.container .stepPart .step2:hover{
+    transform:scale(1.2);
+    background-color: #34a9d1;
+    color: #000;
+}
+
+.container .stepPart .step3{
+    display: inline-block;
+    transform:rotate(40deg) scale(1);
+    transition: .5s;
+}
+
+.container .stepPart .step3:hover{
+    transform:rotate(0) scale(1.2);
+    background-color: #34a9d1;
+    color: #000;
+}
+
+
+
+/* FOOTER SECTION */
+.footer{
+    max-width: 100%;
+    text-align: center;
+}
+.footer footer{
+    background-color: #2e2f31;
+    color:#dedfe5;
+}
+
+.footer footer p{
+    padding: 15px;
+}
